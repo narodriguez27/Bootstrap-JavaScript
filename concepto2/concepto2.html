@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>¿Qué es JavaScript?</title>
+</head>
+
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">JavaScript Ya!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container">
+        <h1 class="display-6 text-center text-light">¿Qué es JavaScript?</h1>
+        <article class="container text-light mt-5 bg-success p-4 rounded">
+            <p>JavaScript, al igual que Flash(tecnología obsoleta), Visual Basic Script (tecnología obsoleta), Applet
+                (tecnología obsoleta), es una de las múltiples maneras que han surgido para extender las capacidades del
+                lenguaje HTML (lenguaje para el diseño de páginas de Internet). Al ser la más sencilla, es por el
+                momento la más extendida.
+                JavaScript no es un lenguaje de programación propiamente dicho como C, C++ etc. Es un lenguaje script u
+                orientado a documento, como pueden ser los lenguajes de macros que tienen muchos procesadores de texto y
+                planillas de cálculo. Hasta hace poco no se podía desarrollar programas con JavaScript que se ejecutaran
+                fuera de un Navegador, aunque en este momento comienza a expandirse a otras áreas como la programación
+                en el servidor con Node.js o aplicaciones de escritorio con Electron JS.</p><br>
+            <p>JavaScript es un lenguaje interpretado que se embebe en una página web HTML. Un lenguaje interpretado
+                significa que a las instrucciones las analiza y procesa el navegador en el momento que deben ser
+                ejecutadas.</p><br>
+            <p>Nuestro primer programa será el famoso "Hola Mundo", es decir un programa que muestre en el documento
+                HTML el mensaje "Hola Mundo".</p><br>
+            <div class="container ">
+                <div class="row justify-content-center">
+                        <pre class="col-12 col-md-12 col-lg-6 col-xl-6 bg-dark border border-dark rounded text-light text-start">
+                       <p>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Ejemplo de JavaScript&lt;/title&gt;
+            &lt;meta charset="UTF-8"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+                                
+        &lt;script&gt;
+            document.write('Hola Mundo');
+        &lt;/script&gt;
+                                
+        &lt;/body&gt;
+        &lt;/html&gt;
+                       </p>
+                        </pre>
+                </div>
+            </div>
+            <p>El programa en JavaScript debe ir encerrado entre las marcas 'script':
+                <pre> 
+                    <p>&ltscript&gt<br>&lt/script&gt</p>
+                </pre>
+            <p>En versiones anteriores a HTML5 el programa en JavaScript debe ir encerrado entre la marca script e
+                inicializada la propiedad type con la cadena text/javascript:</p>
+                <pre>
+                    <p>&lt;script type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</p>
+                </pre>
+            <p>
+                Para imprimir caracteres sobre la página debemos llamar al comando 'write' del objeto document. La
+                información a imprimirse debe ir entre comillas y encerrada entre paréntesis. Todo lo que indicamos
+                entre comillas aparecerá tal cual dentro de la página HTML.
+                Es decir, si pedimos al navegador que ejecute esta página mostrará el texto 'Hola Mundo'. </p><br>
+            <p>Cada vez que escribimos una instrucción finalizamos con el carácter punto y coma.</p>
+            <p class="fw-bold fst-italic text-decoration-underline">ES IMPORTANTISIMO TENER EN CUENTA QUE JavaScript es
+                SENSIBLE A MAYUSCULAS Y MINUSCULAS. NO ES LO MISMO ESCRIBIR:
+                document.write que DOCUMENT.WRITE (la primera forma es la correcta, la segunda forma provoca un error de
+                sintaxis).</p>
+            <p> Nos acostumbraremos a prestar atención cada vez que escribamos en minúsculas o mayúsculas para no
+                cometer errores sintácticos. Ya veremos que los nombres de funciones llevan letras en mayúsculas.
+                Por el momento después de cada instrucción se dispone un punto y coma (luego veremos que en muchos casos
+                se los puede obviar):</p>
+
+            <p class="text-dark fw-bold">document.write('Hola Mundo');</p>
+            <br>
+            <p>            
+                Acotaciones
+                Para corregir los errores sintácticos cuando codifiquemos nuestros programas será necesario tener abierta la ventana de "Herramientas para desarrolladores". La podemos abrir presionando la tecla 'F12' o desde el menú de opciones del navegador:
+            </p>
+            <img src="/assets/img/imagen-cpto-1-1.JPG" alt=""><br>
+            <br><p> Por ejemplo modifiquemos nuestro programa y agreguemos un error sintáctico:</p>
+            <pre>
+    &lt;script&gt;
+    DOCUMENT.WRITE('Hola Mundo');
+    &lt;/script&gt;
+            </pre class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/assets/img/imagen-cpto-1-2.JPG" alt=""> <br><br>
+                </div>
+            </div>
+            <p>La pestaña de la "Consola" nos informa el tipo de error, el archivo y la línea dentro del archivo donde se ha detectado el error. <br>
+                Esta herramienta para desarrolladores la consultaremos constantemente para detectar y corregir errores que dispongamos en nuestra aplicación.</p>
+        </article>
+    </section>
+    <section class="container">
+        <article class="container text-light mt-5 bg-success p-4 rounded">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 mx-auto my-auto">
+                    <p class="text-light bg-dark rounded text-center p-3">Problema Numero 1:<br>
+                        Realizar un programa que muestre su nombre y su edad en una página HTML.<br>
+                        Emplear el comando write del objeto document para imprimir.<br>
+                        Tener en cuenta que si queremos que cada dato quede en una fila distinta de la página debemos insertar la etiqueta HTML <br> (salto de linea en HTML), es decir debemos disponer: document.write('&lt;br&gt;')
+                    </p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-xs-12 bg-dark rounded">
+                    <p class="text-center mt-2">Resolución Problema Numero: 1</p>
+                   <code class="text-light">
+                    <pre class="">
+
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title>Ejemplo de JavaScript&lt;/title&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    
+                    &lt;script&gt;
+                      document.write('Diego Martinez');
+                      document.write('&lt;br&gt;');
+                      document.write('44');
+                    &lt;/script&gt;
+
+                      &lt;/body&gt;
+                      &lt;/html&gt;
+                   </pre>
+                </code>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+    </article>
+    </section>
+  
+    <script src="/js/concepto2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
