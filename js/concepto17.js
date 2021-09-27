@@ -22,16 +22,37 @@ menorEnteros(numeroUno,numeroDos,numeroTres);
 
 //Resolucion 2//
 
-Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.
-
-
 function menorMayor(valorUno, valorDos, valorTres){
-
+    if (valorUno < valorDos && valorUno < valorTres) {
+        document.write(valorUno + ' ');
+        if (valorDos < valorTres) {
+            document.write(valorDos + ' ' + valorTres);
+        } else {
+            document.write(valorTres + ' ' + valorDos);
+        }
+    } else {
+        if (valorDos < valorTres) {
+            document.write(valorDos + ' ');
+            if (valorUno < valorTres) {
+                document.write(valorUno + ' ' + valorTres);
+            } else {
+                document.write(valorTres + ' ' + valorUno);
+            }
+        } else {
+            document.write(valorTres + ' ');
+            if (valorUno < valorDos) {
+                document.write(valorUno + ' ' + valorDos);
+            } else {
+                document.write(valorDos + ' ' + valorUno);
+            }
+        }
+    }
 }
 
 let numeroUno = parseInt(prompt("Ingrese el primer numero: "));
 let numeroDos = parseInt(prompt("Ingrese el segundo numero: "));
 let numeroTres = parseInt(prompt("Ingrese el segundo numero: "));
-
+document.write('Los tres valores ingresados son ' + numeroUno + ' ' + numeroDos + ' ' + numeroTres + '<br>');
+document.write('Los valores ordenados de menor a mayor son: ');
 document.write("<br>");
 menorMayor(numeroUno,numeroDos,numeroTres);
