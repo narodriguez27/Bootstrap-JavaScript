@@ -68,11 +68,13 @@ function retornarMes(mes) {
 
 
 function retornarFechaTexto() {
-    let fecha = new Date();
-    let cadena = 'Hoy es ' + retornarDiaSemana(fecha.getDay()) + ' ' + fecha.getDate() + ' de ' +
-        retornarMes(fecha.getMonth()) + ' de ' + fecha.getFullYear();
-    return cadena;
+     let fecha = new Date();
+     const fullYear = fecha.getFullYear();
+     const diaSemanaTexto = retornarDiaSemana(fecha.getDay());
+     const diaNumero = fecha.getDate();
+     const mes = retornarMes(fecha.getMonth())
+     let cadena = 'Hoy es '+diaSemanaTexto+' '+ diaNumero+' de '+mes+' de '+fullYear;
+     return cadena;
 }
 
 document.write(retornarFechaTexto());
-

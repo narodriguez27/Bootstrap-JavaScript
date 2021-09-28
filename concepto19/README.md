@@ -1,8 +1,8 @@
 Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes.
+
 Confeccionar una función que nos retorne un string con el siguiente formato:
 Hoy es Lunes 9 de Agosto de 2021
 Para poder recuperar el día de la semana debemos llamar al método:
-
 int diaSemana=fecha.getDay();
 El método getDay() devuelve el día de la semana de la fecha especificada, siendo 0 (Domingo) el primer día.
 
@@ -77,10 +77,13 @@ function retornarMes(mes) {
 
 
 function retornarFechaTexto() {
-    let fecha = new Date();
-    let cadena = 'Hoy es ' + retornarDiaSemana(fecha.getDay()) + ' ' + fecha.getDate() + ' de ' +
-        retornarMes(fecha.getMonth()) + ' de ' + fecha.getFullYear();
-    return cadena;
+     let fecha = new Date();
+     const fullYear = fecha.getFullYear();
+     const diaSemanaTexto = retornarDiaSemana(fecha.getDay());
+     const diaNumero = fecha.getDate();
+     const mes = retornarMes(fecha.getMonth())
+     let cadena = 'Hoy es '+diaSemanaTexto+' '+ diaNumero+' de '+mes+' de '+fullYear;
+     return cadena;
 }
 
 document.write(retornarFechaTexto());
