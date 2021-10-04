@@ -18,3 +18,22 @@ function raizNumero(valorUno) {
 
 let valorUno = parseInt(prompt("Ingrese valor para saber la raiz cuadrada:"));
 raizNumero(valorUno);
+
+//RESOLUCION EXAMEN//
+
+/*
+Dada una lista de números y un número singular,
+necesitamos crear una función que verifique si esa lista contiene 2 números que suman ese número singular.
+
+*/
+
+
+function sumValidator(list, number) {
+
+
+
+const testList = [1, 7, 4, 2, 8];
+
+document.write("Test 1: ", sumValidator(testList, 10) ? "Pass" : "Fail");
+console.log("Test 2: ", !sumValidator(testList, 13) ? "Pass" : "Fail");
+console.log("Test 3: ", !sumValidator(testList, 4) ? "Pass" : "Fail");

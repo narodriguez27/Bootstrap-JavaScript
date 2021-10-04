@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+  <!-- Resolucion onload -->    
+<body onload="cargarPagina()">
+    
+    <!-- Resolucion onfocus onblur -->
+     
+    <form action="">
+        <label for="">Ingrese Nombre: </label>
+        <input type="text"  onfocus="clearname(this)" onblur="caracter(this)" id="nombreIngresado" value="Matias Aromi Puto">
+        <label for="">Ingrese Contraseña</label>
+        <input type="password" onblur="checkpassword(this)" id="passwordIngresada">
+        <input type="button" value="Ingresar" onclick="checkData()">
+    </form>
+   <!-- resolucion onmouseover onmouseout -->
+    <table border="1">
+        <tr>
+            <td onMouseOver="pintar(this,'#ff0000')" onMouseOut="pintar(this,'#ffffff')">
+                <a href="http://www.outlook.com">Outlook</a>
+            </td>
+            <td onMouseOver="pintar(this,'#00ff00')" onMouseOut="pintar(this,'#ffffff')">
+                <a href="http://www.yahoo.com">Yahoo</a>
+            </td>
+            <td onMouseOver="pintar(this,'#f000ff')" onMouseOut="pintar(this,'#ffffff')">
+                <a href="http://www.gmail.com">GMail</a>
+            </td>
+        </tr>
+    </table>
+
+    <script src="js/concepto30.js"></script>
+</body>
+</html>
